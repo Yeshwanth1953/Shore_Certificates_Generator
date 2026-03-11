@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SHORE Fest 26</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+/* ─── HERO ─────────────────────────────────────────────── */
+.hero {
+  height: 100vh;
+  min-height: 700px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  overflow: hidden;
+
+  background:
+    linear-gradient(rgba(190,20,10,0.55), rgba(120,0,0,0.60)),
+    url("images/landing-section-bg.png") center center / cover no-repeat;
+}
+
+/* ─── NAVBAR ────────────────────────────────────────────── */
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  z-index: 10;
+  flex-shrink: 0;
+}
+
+.left-logo img { height: 44px; }
+
+.right-nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.partner { height: 42px; }
+
+.login-btn {
+  padding: 10px 30px;
+  border: 2px solid white;
+  border-radius: 30px;
+  background: transparent;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ─── CENTRE CONTENT ────────────────────────────────────── */
+.center-content {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 18px;
+}
+
+/* TAGLINE */
+.tagline {
+  letter-spacing: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* SHORE LOGO IMAGE — full width, contains SHORE text + circle already */
+.shore-logo {
+  width: clamp(600px, 70vw, 1000px);
+  display: block;
+}
+
+
+
+
+
+
+/* ─── EVENTS BUTTON ─────────────────────────────────────── */
+.events-btn {
+  margin-top: 22px;
+  padding: 14px 44px;
+  background: #ffc22e;
+  color: #1a0000;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 40px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: background 0.2s, transform 0.2s;
+  display: inline-block;
+  z-index: 5;
+  position: relative;
+}
+.events-btn:hover {
+  background: #ffd060;
+  transform: scale(1.05);
+}
+
+
+/* ─── DOLPHINS — stand on top of the rock surface ─────────── */
+.dolphin-left {
+  position: absolute;
+  left: 4%;
+  bottom: 155px;
+  width: clamp(180px, 18vw, 280px);
+  z-index: 5;
+}
+
+.dolphin-right {
+  position: absolute;
+  right: 4%;
+  bottom: 155px;
+  width: clamp(180px, 18vw, 280px);
+  z-index: 5;
+}
+
+/* ─── ROCKS — pin to bottom, behind cultural strip ─────────── */
+.rock-left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 44%;
+  z-index: 2;
+}
+
+.rock-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 44%;
+  z-index: 2;
+}
+
+/* ─── BOTTOM CULTURAL STRIP — sits on very bottom, above rocks */
+.bottom-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  object-position: top;
+  z-index: 4;
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="left-logo">
+      <img src="images/gitam-logo.svg" alt="GITAM">
+    </div>
+    <div class="right-nav">
+      <img src="images/gitam-partners-logos.svg" class="partner" alt="Partners">
+      <button class="login-btn">Login</button>
+    </div>
+  </nav>
+
+  <!-- CENTRE CONTENT -->
+  <div class="center-content">
+
+    <p class="tagline">Vizag's Biggest Student Fest</p>
+
+    <!-- Just the logo image — it already has SHORE + circle inside -->
+    <img src="images/shore-logo.svg" class="shore-logo" alt="Shore Fest 26">
+
+    <a href="events.html" class="events-btn">Explore Events</a>
+
+  </div>
+
+  <!-- DOLPHINS -->
+  <img src="images/dolphin-left.png"  class="dolphin-left"  alt="">
+  <img src="images/dolphin-right.png" class="dolphin-right" alt="">
+
+  <!-- ROCKS -->
+  <img src="images/rock_left.svg"  class="rock-left"  alt="">
+  <img src="images/rock_right.svg" class="rock-right" alt="">
+
+  <!-- CULTURAL STRIP -->
+  <img src="images/bottom-border.png" class="bottom-border" alt="">
+
+</section>
+
+</body>
+</html>
