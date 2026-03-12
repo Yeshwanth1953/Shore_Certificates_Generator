@@ -1,1 +1,3 @@
-# shore_certificates
+<<<<<<< HEAD
+=======
+>>>>>>> origin/main
